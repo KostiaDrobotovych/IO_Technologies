@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import data from './config/data.json';
 import s from './App.module.css';
+
 import FilterOfAuthors from './FilterOfAuthors/index';
 import AuthorsList from './AuthorsList/index';
 
@@ -34,7 +35,6 @@ class App extends Component {
     const { filter } = this.state;
 
     const filteredList = this.filterList(filter);
-    // console.log(this.sortList());
 
     return (
       <div className={s.wrapper}>

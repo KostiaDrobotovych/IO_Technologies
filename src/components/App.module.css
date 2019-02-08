@@ -1,5 +1,5 @@
 .wrapper {
-  background-image: linear-gradient(
+  background: linear-gradient(
     to bottom,
     #051937,
     #0b2545,
@@ -7,10 +7,9 @@
     #194062,
     #204e71
   );
-  width: 100%;
   min-height: 100vh;
-  width: 100%;
-  padding: 20px 0;
+  height: 100%;
+  padding: 60px 0;
 }
 
 .content {

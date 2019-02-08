@@ -1,13 +1,19 @@
 import React from 'react';
-
+import MedalsSvg from './MedalsSvg/index';
 import s from './AuthorList.module.css';
-import sprite from '../assets/sprite.svg';
 
-const mapForTop = {
-  FIRST: 0,
-  SECOND: 1,
-  THIRD: 2,
-};
+const COLORS = [
+  '#67c9de',
+  '#ba6fcb',
+  '#e39473',
+  '#5aa9e6',
+  '#ac5061',
+  '#345feb',
+];
+
+const rand = () => Math.floor(Math.random() * COLORS.length);
+
+const style = num => ({ backgroundColor: COLORS[num] });
 
 const AuthorList = ({ list, boolForSvg }) => (
   <ul className={s.list}>
@@ -20,7 +26,7 @@ const AuthorList = ({ list, boolForSvg }) => (
           <span className={s.ids}>{idx + 1}</span>
 
           <div className={s.nameBlock}>
-            <div className={s.firstWord}>
+            <div className={s.firstWord} style={style(rand())}>
               <span>{author.name.split('')[0]}</span>
             </div>
 
@@ -31,15 +37,7 @@ const AuthorList = ({ list, boolForSvg }) => (
           </div>
         </div>
 
-        {!boolForSvg && (
-          <div className={s.svgMedals}>
-            <svg className={s.medalIcon}>
-              {idx === mapForTop.FIRST && <use xlinkHref={`${sprite}#st`} />}
-              {idx === mapForTop.SECOND && <use xlinkHref={`${sprite}#nd`} />}
-              {idx === mapForTop.THIRD && <use xlinkHref={`${sprite}#rd`} />}
-            </svg>
-          </div>
-        )}
+        {!boolForSvg && <MedalsSvg idx={idx} />}
 
         <p className={s.pageviews}>{author.pageviews}</p>
       </li>
