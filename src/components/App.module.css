@@ -1,0 +1,21 @@
+.wrapper {
+  background-image: linear-gradient(
+    to bottom,
+    #051937,
+    #0b2545,
+    #123254,
+    #194062,
+    #204e71
+  );
+  width: 100%;
+  min-height: 100vh;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.content {
+  width: 600px;
+  margin: 0 auto;
+  border-radius: 7px;
+  background-color: #fff;
+}

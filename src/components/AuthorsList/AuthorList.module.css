@@ -1,0 +1,80 @@
+.list {
+  list-style: none;
+}
+
+.listItem {
+  height: 60px;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px 0 10px;
+  border-top: 1px solid #e8e9ec;
+}
+
+.listItemColor {
+  height: 60px;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px 0 10px;
+  background-color: #f4f6f9;
+  border-top: 1px solid #e8e9ec;
+}
+
+.leftContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 275px;
+  /* border: 1px solid green; */
+}
+
+.ids {
+  color: #b6b7b9;
+}
+
+.nameBlock {
+  display: flex;
+  align-items: center;
+  width: 250px;
+  /* border: 1px solid green; */
+}
+
+.firstWord {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: yellowgreen;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  font-weight: 600;
+  font-family: sans-serif;
+  margin: 0 10px 0 0;
+  box-shadow: 0px 0px 40px -4px rgba(0, 0, 0, 0.75);
+}
+
+.name {
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+.countPub {
+  color: #b2b2b2;
+}
+
+/* .svgMedals {
+  width: 30px;
+} */
+
+.medalIcon {
+  width: 15px;
+}
+
+.pageviews {
+  font-weight: 600;
+  font-family: sans-serif;
+}
