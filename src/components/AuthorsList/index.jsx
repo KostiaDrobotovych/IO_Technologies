@@ -9,6 +9,12 @@ const COLORS = [
   '#5aa9e6',
   '#ac5061',
   '#345feb',
+  '#67c9de',
+  '#ba6fcb',
+  '#e39473',
+  '#5aa9e6',
+  '#ac5061',
+  '#345feb',
 ];
 
 const rand = () => Math.floor(Math.random() * COLORS.length);

@@ -14,7 +14,13 @@
 
 .content {
   width: 600px;
+  min-height: 660px;
   margin: 0 auto;
   border-radius: 7px;
   background-color: #fff;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
 }

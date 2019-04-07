@@ -1,0 +1,18 @@
+.btn {
+  width: 100px;
+  height: 40px;
+  border: none;
+  background: teal;
+  font-size: 20px;
+  line-height: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #fff;
+}
+
+.btn:focus {
+  outline: none;
+}
